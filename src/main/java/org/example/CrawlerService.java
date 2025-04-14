@@ -38,7 +38,7 @@ public class CrawlerService {
 
         executor.shutdown();
         try {
-            executor.awaitTermination(10, TimeUnit.MINUTES);
+            executor.awaitTermination(1, TimeUnit.MINUTES);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }

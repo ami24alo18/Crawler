@@ -20,8 +20,4 @@ public class CrawlController {
         return crawlerService.startCrawling(request.getUrls());
     }
 
-    @GetMapping("/results")
-    public ResponseEntity<List<CrawlResult>> getResults() {
-        return ResponseEntity.ok(crawlerService.getCrawlResults());
-    }
 }
